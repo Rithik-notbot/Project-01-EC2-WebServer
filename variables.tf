@@ -10,16 +10,16 @@ variable "project_name" {
   default     = "project-01-ec2-webserver"
 }
 
-variable "vpc_cidr" {
-  description = "CIDR block for the VPC"
+variable "vpc_id" {
+  description = "Existing VPC ID"
   type        = string
-  default     = "10.0.0.0/16"
+  default     = "vpc-03389c41f719f68ac"
 }
 
-variable "public_subnet_cidr" {
-  description = "CIDR block for the public subnet"
+variable "subnet_id" {
+  description = "Existing public subnet ID"
   type        = string
-  default     = "10.0.1.0/24"
+  default     = "subnet-0aa0b0134e8785375"
 }
 
 variable "instance_type" {

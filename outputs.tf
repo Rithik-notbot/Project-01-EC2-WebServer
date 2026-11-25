@@ -14,6 +14,6 @@ output "website_url" {
 }
 
 output "vpc_id" {
-  description = "ID of the created VPC"
-  value       = aws_vpc.main.id
+  description = "ID of the existing VPC"
+  value       = var.vpc_id
 }
